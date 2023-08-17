@@ -1,21 +1,26 @@
 package base;
 
-import java.util.List;
-
 public class ListNode {
-    int val;
+    private int value;
     private ListNode next;
 
     public ListNode() {
     }
 
-
-    public ListNode(int val) {
-        this.val = val;
+    public int getValue() {
+        return value;
     }
 
-    public ListNode(int val, ListNode next) {
-        this.val = val;
+    public void setValue(int value) {
+        this.value = value;
+    }
+
+    public ListNode(int value) {
+        this.value = value;
+    }
+
+    public ListNode(int value, ListNode next) {
+        this.value = value;
         this.next = next;
     }
 
